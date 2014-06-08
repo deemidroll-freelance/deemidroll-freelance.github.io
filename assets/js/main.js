@@ -26,9 +26,10 @@
         secs = document.getElementsByClassName('secs');
     setInterval(function () {
         var now = new Date(),
-            h = ('0' + (24 - now.getHours()).toString()).slice(-2),
-            m = ('0' + (60 - now.getMinutes()).toString()).slice(-2),
-            s = ('0' + (60 - now.getSeconds()).toString()).slice(-2);
+            h = ('0' + (23 - now.getHours()).toString()).slice(-2),
+            m = ('0' + (59 - now.getMinutes()).toString()).slice(-2),
+            s = ('0' + (59 - now.getSeconds()).toString()).slice(-2);
+
         [hours[0], hours[1]].forEach(function (el) {
             el.innerHTML = h;
         });
