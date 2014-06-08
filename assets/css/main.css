@@ -4515,7 +4515,9 @@ button {
     position: absolute;
     left: 60px;
     top: 20px;
-    font-size: 27px; }
+    font-size: 27px;
+    color: #d6fedd;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); }
   .counter > .count {
     display: inline-block;
     height: 80px;
