@@ -1,6 +1,7 @@
 (function () {
     // yandex maps
     var myMap;
+    
     // Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
     
@@ -11,14 +12,9 @@
             // При инициализации карты обязательно нужно указать
             // её центр и коэффициент масштабирования.
             center: [55.76, 37.64], // Москва
-            zoom: 10
+            zoom: 10,
+            controls: ['zoomControl']
         });
-    
-        // document.getElementById('destroyButton').onclick = function () {
-        //     // Для уничтожения используется метод destroy.
-        //     myMap.destroy();
-        // };
-    
     }
     // counter
     var hours = document.getElementsByClassName('hours'),
