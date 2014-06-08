@@ -176,11 +176,27 @@ button {
     background-color: #5cb85c;
     color: #fcfcfc;
     font-family: 'Roboto Bold';
+    padding-left: 400px;
     > .mess {
         position: absolute;
         left: 60px;
         top: 20px;
         font-size: 27px;
+    }
+    > .count {
+        display: inline-block;
+        height: 80px;
+        width: 70px;
+        float: left;
+        text-align: center;
+        > .numb {
+            font-size: 48px;
+            font-family: 'Roboto Regular';
+        }
+        > .desc {
+            font-size: 24px;
+            font-family: 'Roboto Regular';
+        }
     }
 }
 

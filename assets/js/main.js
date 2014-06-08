@@ -1,4 +1,5 @@
 (function () {
+    // yandex maps
     var myMap;
     // Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
@@ -19,4 +20,23 @@
         // };
     
     }
+    // counter
+    var hours = document.getElementsByClassName('hours'),
+        mins = document.getElementsByClassName('mins'),
+        secs = document.getElementsByClassName('secs');
+    setInterval(function () {
+        var now = new Date(),
+            h = ('0' + (24 - now.getHours()).toString()).slice(-2),
+            m = ('0' + (60 - now.getMinutes()).toString()).slice(-2),
+            s = ('0' + (60 - now.getSeconds()).toString()).slice(-2);
+        [hours[0], hours[1]].forEach(function (el) {
+            el.innerHTML = h;
+        });
+        [mins[0], mins[1]].forEach(function (el) {
+            el.innerHTML = m;
+        });
+        [secs[0], secs[1]].forEach(function (el) {
+            el.innerHTML = s;
+        });
+    }, 1000);
 })();

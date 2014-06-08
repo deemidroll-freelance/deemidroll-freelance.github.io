@@ -4508,12 +4508,25 @@ button {
   height: 120px;
   background-color: #5cb85c;
   color: #fcfcfc;
-  font-family: 'Roboto Bold'; }
+  font-family: 'Roboto Bold';
+  padding-left: 400px; }
   .counter > .mess {
     position: absolute;
     left: 60px;
     top: 20px;
     font-size: 27px; }
+  .counter > .count {
+    display: inline-block;
+    height: 80px;
+    width: 70px;
+    float: left;
+    text-align: center; }
+    .counter > .count > .numb {
+      font-size: 48px;
+      font-family: 'Roboto Regular'; }
+    .counter > .count > .desc {
+      font-size: 24px;
+      font-family: 'Roboto Regular'; }
 
 .build {
   height: 770px;
