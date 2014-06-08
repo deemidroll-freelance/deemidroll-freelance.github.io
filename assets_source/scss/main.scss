@@ -1,3 +1,95 @@
+@import '../bower_components/bootstrap-sass/lib/normalize';
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+@mixin vendor-prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+@mixin vendor-prefix2($name, $argument1, $argument2) {
+    -webkit-#{$name}: #{$argument1}, #{$argument2};
+    -ms-#{$name}: #{$argument1}, #{$argument2};
+    -moz-#{$name}: #{$argument1}, #{$argument2};
+    -o-#{$name}: #{$argument1}, #{$argument2};
+    #{$name}: #{$argument1}, #{$argument2};
+}
+
 body {
-    font-family: Arial;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    > div {
+        width: 100%;
+    }
+}
+
+.logo {
+    padding-top: 30px;
+}
+
+.slogan {
+    height: 200px;
+}
+
+.promo1 {
+    height: 400px;
+}
+
+.counter {
+    height: 120px;
+    background-color: #5cb85c;
+}
+
+.build{
+    height: 730px;
+}
+
+.adv {
+    height: 670px;
+    background-color: #edffcd;
+}
+
+.promo2 {
+    height: 310px;
+}
+
+.work {
+    height: 460px;
+}
+
+.partners {
+    height: 150px;
+    background-color: #eeeeee;
+}
+
+.space {
+    height: 750px;
+}
+
+.map {
+    height: 470px;
+}
+
+.question {
+    height: 330px;
+    background-color: #41ce69;
+}
+
+.footer {
+    height: 140px;
+    padding: 20px 12px
 }
