@@ -4402,6 +4402,8 @@ body {
 
 button {
   font-family: 'Roboto Regular'; }
+  button:hover {
+    background-color: #ce6e00; }
 
 .container {
   background-color: #fff;
@@ -4491,8 +4493,7 @@ button {
       margin: 20px auto; }
     .promo1 > .booking > button, .promo2 > .booking > button {
       width: 263px;
-      height: 35px;
-      background-color: #ff8b02; }
+      height: 35px; }
 
 .promo2 {
   height: 310px; }
@@ -4722,6 +4723,9 @@ button {
     border: 3px solid #fff;
     background-color: #41ce69;
     width: 140px; }
+    .question > .send:hover {
+      background-color: #fff;
+      color: #111; }
 
 .footer {
   height: 160px;

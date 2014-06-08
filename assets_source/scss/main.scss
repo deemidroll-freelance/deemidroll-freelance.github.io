@@ -49,8 +49,13 @@ body {
     font-family: 'Roboto Medium';
 }
 
+$color_submit: #ff8b02;
+
 button {
     font-family: 'Roboto Regular';
+    &:hover {
+        background-color: darken($color_submit, 10%);
+    }
 }
 
 .container {
@@ -153,7 +158,7 @@ button {
         > button {
             width: 263px;
             height: 35px;
-            background-color: #ff8b02;
+            // background-color: #ff8b02;
         }
     }
 }
@@ -417,6 +422,10 @@ button {
         border: 3px solid #fff;
         background-color: #41ce69;
         width: 140px;
+        &:hover {
+            background-color: #fff;
+            color: #111;
+        }
     }
 }
 
