@@ -40,4 +40,29 @@
             el.innerHTML = s;
         });
     }, 1000);
+
 })();
+
+$(document).ready(function() {
+    $('.item', '.portfolio').hover(function() {
+        $(this).find('.slideUp').toggleClass('slideUp_active');
+    });
+
+    $('.btn-more').click(function() {
+
+        var $this = $(this);
+
+        if($this.hasClass('clicked')) {
+            $('.portfolio-items-wrapper').height(560);
+            $this.text('Показать еще');
+            $this.removeClass('clicked');
+
+        } else {
+            var realH = $('.portfolio-items-wrapper .column').height();
+            $('.portfolio-items-wrapper').height(realH);
+            $this.text('Скрыть');
+            $this.addClass('clicked');
+        }
+        
+    })
+});
