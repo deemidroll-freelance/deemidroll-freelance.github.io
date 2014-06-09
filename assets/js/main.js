@@ -39,7 +39,31 @@
 
 })();
 
+function utmParser() {
+       var url = document.URL.split('?')[1];
+       var params = [], hash = [];
+
+       if(url != undefined) {
+           url = url.split('&');
+
+           for ( var i=0; i<url.length; i++ ) {
+               hash = url[i].split('=');
+               hash[1] = decodeURI(hash[1]);
+               params.push(hash[1]);
+               params[hash[0]] = hash[1];
+           }
+       }
+
+       console.log(params.utm_source);
+
+       $('.source').val(params.utm_source);
+       $('.keyword').val(params.keyword);
+
+}
+
 $(document).ready(function() {
+    utmParser();
+    
     $('.item', '.portfolio').hover(function() {
         $(this).find('.slideUp').toggleClass('slideUp_active');
     });
