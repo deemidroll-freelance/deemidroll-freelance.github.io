@@ -1,0 +1,12 @@
+{
+  "name": "artel-app",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node artel.js"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "ejs": "*",
+    "nodemailer": "^0.6.5"
+  }
+}

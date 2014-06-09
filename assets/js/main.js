@@ -59,6 +59,26 @@ $(document).ready(function() {
             $this.text('Скрыть');
             $this.addClass('clicked');
         }
-        
-    })
+    });
+
+    $('form').submit(function(e){
+        e.preventDefault();
+
+        var form = $(this),
+            action = form.attr('action'),
+            order = form.serialize();
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: order,
+            success: function() {
+                alert('Ваша заявка была успешно отправлена');
+            },
+            error: function(err) {
+                alert('Ошибка. Попробуйте повторить отправку позднее');
+            },
+            timeout:4000
+        });
+    });
 });
