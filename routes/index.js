@@ -38,6 +38,10 @@ exports.mail = function(req, res) {
 };
 
 exports.question = function(req, res) {
+
+	var source = req.body.source || 'не указано';
+	var keyword = req.body.keyword || 'не указано';
+
 	var transport = nodemailer.createTransport("SMTP", {
 		service: "Mandrill",
 		auth: {

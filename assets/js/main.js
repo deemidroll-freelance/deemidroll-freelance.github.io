@@ -98,6 +98,7 @@ $(document).ready(function() {
             data: order,
             success: function() {
                 alert('Ваша заявка была успешно отправлена');
+                form.find('.btn').text('Отправлено').attr("disabled", true);
             },
             error: function(err) {
                 alert('Ошибка. Попробуйте повторить отправку позднее');
