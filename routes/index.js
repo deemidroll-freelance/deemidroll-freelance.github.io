@@ -5,7 +5,13 @@ exports.index = function(req, res){
 };
 
 exports.mail = function(req, res) {
-	var transport = nodemailer.createTransport("Sendmail");
+	var transport = nodemailer.createTransport("SMTP", {
+		service: "Mandrill",
+		auth: {
+			user: "stroitelnaya.artel.gorbunova@gmail.com",
+			pass: "bOIR4yju5EtrkEgTvYgokw"
+		}
+	});
 
 	var mailOptions = {
 	    from: "Ваш почтовый робот <box@artel.ru>",
@@ -28,7 +34,13 @@ exports.mail = function(req, res) {
 };
 
 exports.question = function(req, res) {
-	var transport = nodemailer.createTransport("Sendmail");
+	var transport = nodemailer.createTransport("SMTP", {
+		service: "Mandrill",
+		auth: {
+			user: "stroitelnaya.artel.gorbunova@gmail.com",
+			pass: "bOIR4yju5EtrkEgTvYgokw"
+		}
+	});
 
 	var mailOptions = {
 	    from: "Ваш почтовый робот <box@artel.ru>",
