@@ -4603,6 +4603,7 @@ button {
   .adv:before {
     content: 'Преимущества';
     padding-top: 55px;
+    font-family: 'Roboto Slab';
     position: relative;
     display: block;
     width: 1000px;
