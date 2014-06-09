@@ -4495,11 +4495,11 @@ button {
     font-size: 22px;
     text-align: center;
     padding-top: 30px; }
-    .promo1 > .booking > input, .promo2 > .booking > input {
+    .promo1 > .booking > form input, .promo2 > .booking > form input {
       width: 263px;
       font-family: 'Roboto Medium';
       margin: 20px auto; }
-    .promo1 > .booking > button, .promo2 > .booking > button {
+    .promo1 > .booking > form button, .promo2 > .booking > form button {
       width: 263px;
       height: 35px; }
 
@@ -4750,35 +4750,35 @@ button {
     top: 30px;
     left: 100px;
     line-height: 40px; }
-  .question > .name {
+  .question > form .name {
     position: absolute;
     top: 140px;
     left: 100px;
     width: 263px;
     font-size: 14px;
     font-family: 'Roboto Regular'; }
-  .question > .phone {
+  .question > form .phone {
     position: absolute;
     top: 190px;
     left: 100px;
     width: 263px;
     font-size: 14px;
     font-family: 'Roboto Regular'; }
-  .question > .text {
+  .question > form .text {
     position: absolute;
     top: 140px;
     left: 400px;
     width: 388px;
     font-size: 14px;
     font-family: 'Roboto Regular'; }
-  .question > .send {
+  .question > form .send {
     position: absolute;
     right: 47px;
     bottom: 43px;
     border: 2px solid #fff;
     background-color: #41ce69;
     width: 140px; }
-    .question > .send:hover {
+    .question > form .send:hover {
       background-color: #fff;
       color: #111; }
 

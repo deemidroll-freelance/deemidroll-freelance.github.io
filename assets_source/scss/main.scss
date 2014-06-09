@@ -162,12 +162,12 @@ button {
         font-size: 22px;
         text-align: center;
         padding-top: 30px;
-        > input {
+        > form input {
             width: 263px;
             font-family: 'Roboto Medium';
             margin: 20px auto;
         }
-        > button {
+        > form button {
             width: 263px;
             height: 35px;
             // background-color: #ff8b02;
@@ -469,7 +469,7 @@ button {
         left: 100px;
         line-height: 40px;
     }
-    > .name {
+    > form .name {
         position: absolute;
         top: 140px;
         left: 100px;
@@ -477,7 +477,7 @@ button {
         font-size: 14px;
         font-family: 'Roboto Regular';
     }
-    > .phone {
+    > form .phone {
         position: absolute;
         top: 190px;
         left: 100px;
@@ -485,7 +485,7 @@ button {
         font-size: 14px;
         font-family: 'Roboto Regular';
     }
-    > .text {
+    > form .text {
         position: absolute;
         top: 140px;
         left: 400px;
@@ -493,7 +493,7 @@ button {
         font-size: 14px;
         font-family: 'Roboto Regular';
     }
-    > .send {
+    > form .send {
         position: absolute;
         right: 47px;
         bottom: 43px;
