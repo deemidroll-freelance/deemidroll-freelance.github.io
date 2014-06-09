@@ -15,9 +15,16 @@ exports.mail = function(req, res) {
 	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone ,
 	}
 
-	transport.sendMail(mailOptions);
+	transport.sendMail(mailOptions, function(error, response){
+	    if(error) {
+	        console.log(error);
+	    } else {
+	    	res.send(200);
+	        console.log("Message sent: " + response.message);
+	    }
+	});
 
-	res.send(200);
+	
 };
 
 exports.question = function(req, res) {
@@ -31,7 +38,12 @@ exports.question = function(req, res) {
 	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone+'<br/> <strong>Вопрос</strong>: '+req.body.question,
 	}
 
-	transport.sendMail(mailOptions);
-
-	res.send(200);
+	transport.sendMail(mailOptions, function(error, response){
+	    if(error) {
+	        console.log(error);
+	    } else {
+	    	res.send(200);
+	        console.log("Message sent: " + response.message);
+	    }
+	});
 }
