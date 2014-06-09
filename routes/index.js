@@ -5,6 +5,10 @@ exports.index = function(req, res){
 };
 
 exports.mail = function(req, res) {
+
+	var source = req.body.source || 'не указано';
+	var keyword = req.body.keyword || 'не указано';
+
 	var transport = nodemailer.createTransport("SMTP", {
 		service: "Mandrill",
 		auth: {
@@ -18,7 +22,7 @@ exports.mail = function(req, res) {
 	    to: "sergey@khokhlachev.ru",
 	    subject: "Заявка с сайта",
 	    generateTextFromHTML: true,
-	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone+'<br/> <strong>Я пришел из</strong>: '+ req.body.source +'<br/> <strong>Я искал</strong>: '+ req.body.keyword ,
+	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone+'<br/> <strong>Я пришел из</strong>: '+ source +'<br/> <strong>Я искал</strong>: '+ keyword ,
 	}
 
 	transport.sendMail(mailOptions, function(error, response){
@@ -47,7 +51,7 @@ exports.question = function(req, res) {
 	    to: "sergey@khokhlachev.ru",
 	    subject: "Заявка с сайта",
 	    generateTextFromHTML: true,
-	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone+'<br/> <strong>Я пришел из</strong>: '+ req.body.source +'<br/> <strong>Я искал</strong>: '+ req.body.keyword+'<br/> <strong>Вопрос</strong>: '+req.body.question,
+	    html: '<strong>Имя</strong>: '+req.body.name+'<br/> <strong>Телефон</strong>: '+req.body.phone+'<br/> <strong>Я пришел из</strong>: '+ source +'<br/> <strong>Я искал</strong>: '+ keyword+'<br/> <strong>Вопрос</strong>: '+req.body.question,
 	}
 
 	transport.sendMail(mailOptions, function(error, response){

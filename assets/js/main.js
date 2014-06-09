@@ -63,7 +63,7 @@ function utmParser() {
 
 $(document).ready(function() {
     utmParser();
-    
+
     $('.item', '.portfolio').hover(function() {
         $(this).find('.slideUp').toggleClass('slideUp_active');
     });

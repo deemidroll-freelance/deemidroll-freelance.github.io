@@ -4413,7 +4413,7 @@ button {
 
 .modal-dialog {
   width: 380px !important; }
-  .modal-dialog button:hover {
+  .modal-dialog .close:hover {
     background-color: transparent; }
 
 .container {
@@ -4609,7 +4609,7 @@ button {
   text-align: center; }
   .adv:before {
     content: 'Преимущества';
-    padding-top: 55px;
+    padding-top: 65px;
     font-family: 'Roboto Slab';
     position: relative;
     display: block;

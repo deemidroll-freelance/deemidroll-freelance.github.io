@@ -68,7 +68,7 @@ button {
 .modal-dialog {
     width: 380px !important;
 
-    button:hover {
+    .close:hover {
         background-color: transparent;
     }
 }
@@ -294,7 +294,7 @@ button {
     text-align: center;
     &:before {
         content: 'Преимущества';
-        padding-top: 55px;
+        padding-top: 65px;
         font-family: 'Roboto Slab';
         position: relative;
         display: block;

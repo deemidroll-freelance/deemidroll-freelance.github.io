@@ -28,8 +28,8 @@
 
             <form method="POST" action="/mail">
             	Успейте заказать!
-                <input name="name" placeholder="Ваше имя" type="text" class="name form-control">
-                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control">
+                <input name="name" placeholder="Ваше имя" type="text" class="name form-control" required>
+                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control" required>
                 <input class="source" type="hidden" value="">
 	            <input class="keyword" type="hidden" value="">
                 <button type="submit" class="req btn btn-warning">Оставить заявку</button>
@@ -114,8 +114,8 @@
             <div class="booking">
                <form method="POST" action="/mail">
 	            	Успейте заказать!
-	                <input name="name" placeholder="Ваше имя" type="text" class="name form-control">
-	                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control">
+	                <input name="name" placeholder="Ваше имя" type="text" class="name form-control" required>
+	                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control" required>
 	                <input class="source" type="hidden" value="">
 	            	<input class="keyword" type="hidden" value="">
 	                <button type="submit" class="req btn btn-warning">Оставить заявку</button>
@@ -248,8 +248,8 @@ rem aperiam</div>
         <div class="question">
             <div class="desc">У вас появились вопросы?<br/>Спросите нас:</div>
             <form method="POST" action="/question">
-            	<input name="name" placeholder="Ваше имя" type="text" class="name form-control">
-	            <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control">
+            	<input name="name" placeholder="Ваше имя" type="text" class="name form-control" required>
+	            <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control" required>
 	            <textarea name="question" placeholder="Ваш вопрос" class="text form-control" name="" id="" cols="30" rows="7"></textarea>
 	            <input class="source" type="hidden" value="">
 	            <input class="keyword" type="hidden" value="">
@@ -275,8 +275,8 @@ rem aperiam</div>
 	      </div>
 	      <div class="modal-body clearfix">
 	        <form method="POST" action="/mail">
-                <input name="name" placeholder="Ваше имя" type="text" class="name form-control" style="margin-bottom: 15px;">
-                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control">
+                <input name="name" placeholder="Ваше имя" type="text" class="name form-control" style="margin-bottom: 15px;" required>
+                <input name="phone" placeholder="Ваш телефон" type="text" class="phone form-control" required>
                 <input class="source" type="hidden" value="">
 	            <input class="keyword" type="hidden" value="">
 	            <p>&nbsp;</p>
