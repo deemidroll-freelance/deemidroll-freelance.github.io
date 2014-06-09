@@ -283,7 +283,8 @@ button {
     font-size: 37px;
     text-align: center;
     &:before {
-        content: '';
+        content: 'Преимущества';
+        padding-top: 55px;
         position: relative;
         display: block;
         width: 1000px;
